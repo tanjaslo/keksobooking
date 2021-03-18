@@ -18,11 +18,10 @@ const mainPinIcon = window.L.icon({
   iconAnchor: [MAIN_PIN_WIDTH/2, MAIN_PIN_WIDTH],
 });
 const mainMarker = window.L.marker({ lat: MAIN_LATITUDE, lng: MAIN_LONGITUDE}, {draggable: true, icon: mainPinIcon});
-const tileLayer = window.L.tileLayer(
-  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}{r}.png',
-  {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  });
+const tileLayer = window.L.tileLayer(	    'https://tile.jawg.io/jawg-sunny/{z}/{x}/{y}.png?access-token=BlNGfCihLPs2IuAeiQMUurRAnO2PVMhS4ntmMP9rGn4j70S94UoFpd6dX3SENwAA',
+{ 
+    attribution: '<a href=\"https://www.jawg.io\" target=\"_blank\">&copy; Jawg</a> - <a href=\"https://www.openstreetmap.org\" target=\"_blank\">&copy; OpenStreetMap</a>&nbsp;contributors',
+});
 
 const initMap = (adverts) => {
   map.on('load', () => {
