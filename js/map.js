@@ -19,7 +19,7 @@ const mainPinIcon = window.L.icon({
 });
 const mainMarker = window.L.marker({ lat: MAIN_LATITUDE, lng: MAIN_LONGITUDE}, {draggable: true, icon: mainPinIcon});
 const tileLayer = window.L.tileLayer(
-  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}{r}.png',
   {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   });
