@@ -21,7 +21,8 @@ const mainMarker = window.L.marker({ lat: MAIN_LATITUDE, lng: MAIN_LONGITUDE}, {
 const tileLayer = window.L.tileLayer(
   'https://tile.jawg.io/jawg-sunny/{z}/{x}/{y}.png?access-token=BlNGfCihLPs2IuAeiQMUurRAnO2PVMhS4ntmMP9rGn4j70S94UoFpd6dX3SENwAA',
   {
-    attribution: '<a href=\"https://www.jawg.io\" target=\"_blank\">&copy; Jawg</a> - <a href=\"https://www.openstreetmap.org\" target=\"_blank\">&copy; OpenStreetMap</a>&nbsp;contributors',
+    attribution:
+  '<a href=\\"https://www.jawg.io\\" target=\\"_blank\\">&copy; Jawg</a> - <a href=\\"https://www.openstreetmap.org\\" target=\\"_blank\\">&copy; OpenStreetMap</a>&nbsp;contributors',
   });
 
 const initMap = (adverts) => {
